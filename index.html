@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Garden Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🌱 Garden Planner</h1>
+      <p>Smart tools for planning, scheduling, and growing your perfect garden.</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#plants">Plants</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#notes">Reminders</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Create, Track & Nurture</h2>
+      <p>Manage your garden like a pro – all in one place.</p>
+      <a href="#plants" class="cta-btn">Start Now</a>
+    </div>
+  </section>
+
+  <section id="plants" class="section">
+    <div class="container">
+      <h2>🌼 Your Plants</h2>
+      <div class="plant-grid">
+        <div class="plant-card">
+          <img src="https://images.unsplash.com/photo-1712178435871-48d630f15969?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHVycGxlJTIwYWVzdGhldGljfGVufDB8fDB8fHww" alt="Lavender" />
+          <h3>Lavender</h3>
+          <p>Dry soil, full sun, trim monthly.</p>
+        </div>
+        <div class="plant-card">
+          <img src="https://artterrarium.com/cdn/shop/articles/Art-Terrarium-Succulents_1000x.png?v=1511907614" alt="Succulent" />
+          <h3>Succulent</h3>
+          <p>Minimal watering. Indoor sun.</p>
+        </div>
+        <div class="plant-card">
+          <img src="https://cdn.britannica.com/08/100608-050-684264CB/Saguaro-cactus-Arizona.jpg" alt="Cactus" />
+          <h3>Cactus</h3>
+          <p>Water once a month, high heat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="section light">
+    <div class="container">
+      <h2>🕒 Watering Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plant</th>
+            <th>Frequency</th>
+            <th>Last Watered</th>
+            <th>Next Due</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lavender</td>
+            <td>Weekly</td>
+            <td>June 4</td>
+            <td>June 11</td>
+          </tr>
+          <tr>
+            <td>Succulent</td>
+            <td>10 days</td>
+            <td>June 1</td>
+            <td>June 11</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="notes" class="section">
+    <div class="container">
+      <h2>📌 Reminders</h2>
+      <form id="reminderForm">
+        <input type="text" id="reminderInput" placeholder="Enter a reminder..." required />
+        <button type="submit">Add Reminder</button>
+      </form>
+      <ul id="reminderList"></ul>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2025 Garden Planner | <a href="https://github.com/yourusername/garden-planner">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

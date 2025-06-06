@@ -1,0 +1,175 @@
+:root {
+    --green: #2e7d32;
+    --light-green: #e8f5e9;
+    --dark-green: #1b5e20;
+    --gray: #f4f4f4;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--gray);
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  header {
+    background: var(--green);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  nav {
+    background: var(--light-green);
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--dark-green);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  #hero {
+    background: url('https://source.unsplash.com/1600x500/?garden,nature') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--dark-green);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  .section {
+    padding: 60px 0;
+    background: var(--white);
+  }
+  
+  .section.light {
+    background-color: var(--light-green);
+  }
+  
+  h2 {
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 40px;
+  }
+  
+  .plant-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .plant-card {
+    background: var(--gray);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px var(--shadow);
+  }
+  
+  .plant-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    width: 300px;
+  }
+  
+  button {
+    background: var(--green);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: var(--dark-green);
+  }
+  
+  #reminderList {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #reminderList li {
+    background: var(--light-green);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  footer {
+    background: var(--green);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  footer a {
+    color: #c8e6c9;
+    text-decoration: none;
+  }
+  
